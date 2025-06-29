@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MSU Room Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ค้นหาห้องเรียนในมหาวิทยาลัยมหาสารคาม</h1>
+  <input type="text" id="search" placeholder="เช่น SC-101">
+  <button onclick="searchRoom()">ค้นหา</button>
+  <div id="map"></div>
+
+  <script src="script.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap">
+  </script>
+</body>
+</html>
